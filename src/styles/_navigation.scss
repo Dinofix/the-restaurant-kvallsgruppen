@@ -1,0 +1,19 @@
+nav {
+  background-image:url(/flagga.png) ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+
+    li {
+        .active {
+            border-bottom: 1px solid black;
+        }
+    }
+  }
+
+}

@@ -1,0 +1,4 @@
+curl -X 'DELETE' \
+  'https://school-restaurant-api.azurewebsites.net/booking/delete/65cf663b5a0843dbfc21e7e4' \
+  -H 'accept: */*'
+

@@ -1,0 +1,12 @@
+curl -X 'PUT' \
+  'https://school-restaurant-api.azurewebsites.net/booking/update/65cf663b5a0843dbfc21e7e4' \
+  -H 'accept: */*' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "id": "65cf663b5a0843dbfc21e7e4",
+  "restaurantId": "65c89584cbb6491fd64e9a7a",
+  "date": "2022-01-01",
+  "time": "18:00",
+  "numberOfGuests": 5,
+  "customerId": "65cf663b5a0843dbfc21e7e3"
+}'

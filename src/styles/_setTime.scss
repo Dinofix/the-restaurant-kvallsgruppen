@@ -1,0 +1,23 @@
+.time{
+
+    
+    margin-top: 55px;
+
+.active {
+    background-color: white;
+    color: black;
+}
+.buttonTime{
+   
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 20px;
+    
+    .earlyDinner, .lateDinner{
+        padding: 15px
+    }
+   
+}
+
+}

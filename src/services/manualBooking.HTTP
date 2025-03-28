@@ -1,0 +1,16 @@
+curl -X 'POST' \
+  'https://school-restaurant-api.azurewebsites.net/booking/create' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "restaurantId": "65c89584cbb6491fd64e9a7a",
+  "date": "2024-04-01",
+  "time": "18:00",
+  "numberOfGuests": 3,
+  "customer": {
+    "name": "Adnan",
+    "lastname": "Ajdinovic",
+    "email": "adnan.ajdinovic@gmail.com",
+    "phone": "070-1234567"
+  }
+}'
