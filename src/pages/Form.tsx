@@ -1,4 +1,4 @@
-import { ChangeEvent, FormEvent, useState } from "react";
+import { ChangeEvent, FormEvent } from "react";
 import { IBookingExt } from "../models/IBookingExt";
 
 export interface ICustomerProps {
@@ -7,36 +7,27 @@ export interface ICustomerProps {
   onPhoneString: (newPhone: string) => void;
   onEmailString: (newEmail: string) => void;
   onCheckboxChange: () => void;
-  customer: IBookingExt
- 
+  customer: IBookingExt;
 }
 export const FormBooking = (props: ICustomerProps) => {
- 
-
-
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
   };
   const handleChangeName = (e: ChangeEvent<HTMLInputElement>) => {
-   
     props.onNameString(e.target.value);
   };
   const handleChangeLastName = (e: ChangeEvent<HTMLInputElement>) => {
-   
     props.onLastNameString(e.target.value);
   };
   const handleChangePhoneNumber = (e: ChangeEvent<HTMLInputElement>) => {
-   
     props.onPhoneString(e.target.value);
     props.onCheckboxChange();
   };
   const handleChangeEmail = (e: ChangeEvent<HTMLInputElement>) => {
-    
     props.onEmailString(e.target.value);
   };
 
   const handleCheckboxChange = () => {
-   
     props.onCheckboxChange();
   };
 
@@ -73,12 +64,7 @@ export const FormBooking = (props: ICustomerProps) => {
           placeholder="Email"
           value={props.customer.email}
         />
-        <input
-          type="checkbox"
-          onChange={handleCheckboxChange}
-          
-          required
-        />
+        <input type="checkbox" onChange={handleCheckboxChange} required />
         <label>
           Jag samtycker till att mina personuppgifter som anges i detta formulär
           används för att hantera min bokning på denna restaurang. Jag förstår
